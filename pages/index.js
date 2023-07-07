@@ -18,7 +18,7 @@ export default function Home() {
         data,
       ];
       setChat(chatRaw);
-      const responseRaw = await fetch('/api/chatgpt', {
+      const responseRaw = await fetch('/api/chatgpt2', {
         method: 'POST',
         body: JSON.stringify(data),
       });
